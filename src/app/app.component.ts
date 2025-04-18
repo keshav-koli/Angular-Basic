@@ -8,5 +8,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'first-angular';
+  name='asdf'
+  title = 'first-angular by keshav';
 }
