@@ -1,0 +1,21 @@
+<h1>Get and Set Input Field</h1>
+<h3>User Name : {{ sname }}</h3>
+<input
+  type="text"
+  name="NameField"
+  value="{{ DisplayName }}"
+  (input)="handleName($event)"
+/>
+<div>
+  <button (click)="getName()">Get Name</button>
+  <button (click)="setName()">Set Name</button>
+</div>
+
+<hr />
+<hr />
+
+<!-- Email with  template reference variable-->
+<h3>User Email : {{ email }}</h3>
+<input type="email" name="" value="{{ email }}" #emailField />
+<button (click)="setEmail()">Set Email</button>
+<button (click)="getEmail(emailField.value)">Get Email</button>

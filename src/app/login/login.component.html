@@ -1,1 +1,26 @@
 <p>login works!</p>
+
+<button (click)="handleEvent($event)">click me</button>
+
+<div
+  style="background-color: red; height: 5rem; width: 5rem"
+  (mouseenter)="handleEvent($event)"
+  class="btnMouseEnter"
+></div>
+
+<div
+  style="background-color: blue; height: 5rem; width: 5rem"
+  (mouseleave)="handleEvent($event)"
+  class="btnMouseLeave"
+></div>
+
+<div>
+  <input
+    type="text"
+    class="fdsa"
+    (input)="handleEventInput($event)"
+    (pointerenter)="handleEvent($event)"
+    (focus)="handleEvent($event)"
+    (blur)="handleEvent($event)"
+  />
+</div>
